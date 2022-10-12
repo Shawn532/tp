@@ -31,8 +31,7 @@ public class AddressBook implements ReadOnlyAddressBook {
      *
      * Note that non-static init blocks are not recommended to use. There are other ways to avoid duplication
      *   among constructors.
-     */
-    {
+     */ {
         persons = new UniquePersonList();
         students = new UniqueStudentList();
         questions = new UniqueQuestionList();
@@ -66,6 +65,7 @@ public class AddressBook implements ReadOnlyAddressBook {
 
     public void setTutorials(List<Tutorial> tutorials) {
         this.tutorials.setTutorials(tutorials);
+    }
 
     public void setStudents(List<Student> students) {
         this.students.setStudents(students);
